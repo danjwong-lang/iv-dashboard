@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { createClient } from '@supabase/supabase-js';
+import Link from 'next/link';  // <-- ADD THIS LINE
 import { createClient } from '@supabase/supabase-js';
 
 const supabaseUrl = 'https://jvamcwzicwhfdjmgatsv.supabase.co';
