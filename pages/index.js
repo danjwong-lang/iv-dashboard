@@ -55,8 +55,17 @@ export default function IVDashboard() {
   return (
     <div style={{padding: 16, fontFamily: 'system-ui', background: '#f9fafb', minHeight: '100vh'}}>
       <h1 style={{margin: '0 0 4px 0', fontSize: 24}}>Options IV Dashboard</h1>
-      <p style={{margin: '0 0 16px 0', color: '#6b7280', fontSize: 14}}>Live data - {data.length} records</p>
-      <div style={{background: '#d1fae5', border: '1px solid #10b981', padding: 12, borderRadius: 8, marginBottom: 16}}>
+<p style={{margin: '0 0 16px 0', color: '#6b7280', fontSize: 14}}>Live data - {data.length} records</p>
+
+<div style={{marginBottom: 16}}>
+  <Link href="/options-history">
+    <a style={{color: '#3b82f6', textDecoration: 'none', fontSize: 14, fontWeight: 500}}>
+      📊 View Options Price History →
+    </a>
+  </Link>
+</div>
+
+<div style={{background: '#d1fae5', border: '1px solid #10b981', padding: 12, borderRadius: 8, marginBottom: 16}}>
         <strong>Connected!</strong> Showing {filteredData.length} rows
       </div>
       <div style={{marginBottom: 16}}>
