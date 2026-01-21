@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
-import { useState, useEffect } from 'react';
 import { createClient } from '@supabase/supabase-js';
-import Link from 'next/link';  // <-- ADD THIS LINE
-import { createClient } from '@supabase/supabase-js';
+import Link from 'next/link';
+
 
 const supabaseUrl = 'https://jvamcwzicwhfdjmgatsv.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp2YW1jd3ppY3doZmRqbWdhdHN2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjMxNTYzMTEsImV4cCI6MjA3ODczMjMxMX0.9tYXsv5scrsIY_b4OhjwSnM2Pwdlticq5-riEc9pkV4';
